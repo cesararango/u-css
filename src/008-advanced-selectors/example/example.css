@@ -65,6 +65,10 @@ footer div {
   padding: 5px;
 }
 
+.as-button-list li:hover {
+  background-color: rgb(255, 64, 129);
+}
+
 .as-avatar {
   min-height: 100px;
 }
@@ -84,11 +88,9 @@ footer div {
   text-transform: capitalize;
 }
 
-
 .as-avatar > div p {
   color: #9b9b9b;
 }
-
 
 .as-top-list {
   line-height: 40px;
@@ -106,7 +108,6 @@ footer div {
   margin-left: 5px;
 }
 
-
 .as-cards {
   display: flex;
   flex-wrap: wrap;
@@ -117,6 +118,11 @@ footer div {
   position: relative;
 }
 
+.as-card:hover {
+  background-color: white;
+  opacity: 0.5;
+  transition-duration: 1s;
+}
 
 .as-card-img {
   box-sizing: border-box;
@@ -129,12 +135,18 @@ footer div {
 
 .as-card-img img {
   width: 100%;
-  max-width: 100%;
+  max-width: 110%;
+  max-height: 110%;
+  height: 100%;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
+.as-card-img img:hover {
+  height:107%;
+  width:105%;
+}
 
 .as-onsale {
   background-color: #fbc2d4;
@@ -148,6 +160,15 @@ footer div {
   text-decoration: none;
   text-transform: uppercase;
   width: 90px;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: #9b9b9b;
+}
+
+aside ul li a:hover {
+  color: rgb(255, 64, 129);
 }
 
 

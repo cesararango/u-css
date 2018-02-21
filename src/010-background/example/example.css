@@ -1,5 +1,126 @@
 /*
  * Practice : Background, Color and Shadows
  * Version: 1
- * By: xxx
+ * By: César Arango Carvajal
  */
+
+p {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+h2, h3, p {
+  margin: 0;
+  color: white;
+}
+
+.page-content {
+  padding: 0;
+}
+
+.solution-container {
+  padding: 20px;
+  font-size: 0;
+  background: radial-gradient(40% 60%, #f5a275, #D24F2E);
+  max-height: 100%;
+  height: 100vh;
+}
+
+.doctor-cards-container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card-container {
+  box-shadow: inset 1px 1px 0 0 lightgrey;
+  box-sizing: border-box;
+  padding: 20px;
+  display: inline-block;
+  font-size: 0;
+  background-color: #f5a275;
+  width: 100%;
+  max-width: 470px;
+  height: 150px;
+  border-radius: 100px;
+  margin: 20px;
+  position: relative;
+}
+
+.card-container img {
+  width: 25%;
+  min-width: 108px;
+  border-radius: 50%;
+  border: 2px solid white;
+  vertical-align: top;
+}
+
+.card-container:hover {
+  opacity: 0.5;
+  transition-duration: 1s;
+}
+
+.text-container {
+  display: inline-block;
+  font-size: 0;
+  width: 70%;
+  box-sizing: border-box;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+}
+
+.text-container h2 {
+  font-size: 18px;
+  line-height: 18px;
+  text-shadow: 1px 1px 1px #000000
+}
+
+.text-container p {
+  font-size: 16px;
+  line-height: 16px;
+  text-shadow: 1px 1px 1px #000000
+}
+
+.title-container {
+  font-size: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title-container h2 {
+  text-shadow: 4px -4px 1px #000000;
+}
+
+.title-container h3 {
+  text-shadow: -4px -4px 1px #000000;
+}
+
+.custom-separator {
+  background: radial-gradient(40% 60%, #f5a275, #D24F2E);
+  width: 100%;
+  height: 3px;
+  display: block;
+  margin: 15px 0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+  .doctor-cards-container {
+    display: block;
+  }
+
+  .card-container {
+    display: block;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+}

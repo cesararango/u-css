@@ -1,5 +1,33 @@
 /*
  * Practice : Box Sizing
  * Version: 1
- * By: xxx
+ * By: César Arango Carvajal
  */
+
+p{
+  margin: 0;
+}
+
+.page-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-content div {
+}
+
+.bs-example {
+  background-color: #F5F5F5;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  padding: 15px;
+  width: 100%;
+}
+
+.bs-example div {
+  box-sizing: border-box;
+  padding: 10px;
+  width: auto;
+  max-width: 500px;
+  border: 2px solid red;
+}

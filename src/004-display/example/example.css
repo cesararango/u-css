@@ -1,5 +1,91 @@
 /*
  * Practice : Display
  * Version: 1
- * By: xxx
+ * By: César Arango Carvajal
  */
+.page-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-content .main-container {
+  padding: 0;
+}
+
+.page-content div {
+  background-color: #E8E8E8;
+  padding: 10px;
+}
+
+header h1 {
+  padding: 10px;
+}
+
+.page-content .nav-bar {
+  background-color: #DCDCDC;
+  min-height: 60px;
+}
+
+.page-content .nav-bar ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.page-content .nav-bar ul li {
+  margin: 7px 15px 0 0;
+  float: left;
+  color: #FD4281;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-content .two-columns {
+  padding: 0;
+  font-size: 0;
+}
+
+.page-content .two-columns div {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.page-content .table-container {
+  font-size: 0;
+  padding: 0;
+}
+
+.page-content .table-container div {
+  padding: 0;
+}
+
+.page-content .table-container div div {
+  background-color: #C8C8C8;
+  box-sizing: border-box;
+  color: #787878;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px;
+  padding: 20px;
+  text-align: center;
+  width: 33%;
+}
+
+.page-content .gallery-container{
+  font-size: 0;
+}
+.page-content .gallery-container div{
+  border: 2px solid red;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px;
+  width: 33%;
+}
+
+

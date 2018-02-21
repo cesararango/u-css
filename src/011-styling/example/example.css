@@ -1,5 +1,130 @@
 /*
  * Practice : Styling Buttons, links and lists
  * Version: 1
- * By: xxx
+ * By: César Arango Carvajal
  */
+
+.page-content {
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.white-font {
+  color: #ffffff;
+}
+
+.simple-list-style {
+  list-style: none;
+  padding: 0;
+}
+
+.simple-list-style li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.simple-list-style li a:hover {
+  color: black;
+}
+
+.form-container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.form-container input {
+  background-color: lightgrey;
+  border: none;
+  box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-container textarea {
+  border: none;
+  box-sizing: border-box;
+  display: block;
+  background-color: lightgrey;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-container button {
+  background-color: lightpink;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 15px 60px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border: 1px solid white;
+}
+
+.form-container button:hover {
+  border-color: lightpink;
+  background-color: white;
+  color: lightpink;
+}
+
+.form-container form p {
+  color: #CCCCCC;
+  margin-bottom: 10px;
+}
+
+.footer-links-container {
+  padding: 20px;
+  align-items: start;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.links-container {
+  display: inline-block;
+}
+
+.links-container p {
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
+}
+
+.image-container {
+  background-image: url(../resources/background.jpg);
+  background-position: top;
+  box-sizing: border-box;
+  height: 300px;
+  position: relative;
+}
+
+.image-container h1 {
+  background-color: black;
+  bottom: 0;
+  box-sizing: border-box;
+  color: white;
+  display: inline-block;
+  left: 0;
+  margin: 0;
+  opacity: 0.5;
+  padding-top: 100px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+}

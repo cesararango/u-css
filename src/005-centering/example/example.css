@@ -1,5 +1,187 @@
 /*
  * Practice : Centering
  * Version: 1
- * By: xxx
+ * By: César Arango Carvajal
  */
+.page-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.main-container {
+  background-color: #E8E8E8;
+  padding: 20px;
+}
+
+.main-container h4 {
+  color: #787878;
+  text-align: center;
+  background-color: #D3D3D3;
+  margin-top: 0;
+}
+
+.nav-bar-container {
+  font-size: 0;
+  margin-bottom: 15px;
+}
+
+.nav-bar {
+  background-color: #D3D3D3;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-bar div {
+  display: inline-block;
+  margin: 0 auto;
+  padding-top: 8px;
+}
+
+.nav-bar div a {
+  color: #FD4281;
+  font-size: 16px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.first-row {
+  font-size: 0;
+  text-align: center;
+}
+
+.first-row div {
+  background-color: #D3D3D3;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  padding: 20px;
+  width: 20%;
+}
+
+.second-row {
+  font-size: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.second-row div {
+  background-color: #D3D3D3;
+  display: inline-block;
+  font-size: 16px;
+  height: 100px;
+  margin: 10px;
+  padding: 20px;
+  vertical-align: middle;
+  width: 20%;
+}
+
+.centered-line-container {
+  background-color: #D3D3D3;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 30px 10px;
+  width: 30%;
+}
+
+.vertical-line-container {
+  background-color: #D3D3D3;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 40px 10px;
+  text-align: center;
+  width: 15%;
+}
+
+.vertical-line-container p {
+  line-height: 16px;
+  margin: 0;
+}
+
+.flex-box-container-multiple-lines-container {
+  background-color: #D3D3D3;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 50px 10px;
+}
+
+.flex-box-container-multiple-lines-container p {
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.fixed-height-centered-block-container {
+  background-color: #D3D3D3;
+  height: 200px;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+}
+
+.fixed-height-centered-block-container div {
+  background-color: #A9A9A9;
+  color: #ffffff;
+  display: block;
+  height: 80px;
+  margin-top: -40px;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+}
+
+.unknown-height-block-container {
+  background-color: #D3D3D3;
+  height: 200px;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+}
+
+.unknown-height-block-container div {
+  background-color: #A9A9A9;
+  color: #ffffff;
+  display: block;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.color-center {
+  align-items: center;
+  background-color: #79A5A3;
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  padding: 40px 10px;
+}
+
+.red-square {
+  background-color: #C15B59;
+  height: 200px;
+  position: relative;
+  width: 200px;
+}
+
+.black-square {
+  background-color: #454C5B;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+}
+
+.orange-square {
+  background-color: #E0B172;
+  height: 20px;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
+  width: 20px;
+}

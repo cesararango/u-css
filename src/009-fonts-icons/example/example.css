@@ -1,5 +1,198 @@
 /*
- * Practice : Fonts, Icons and Sizes
+ * Practice : fonts, icons
  * Version: 1
- * By: xxx
+ * By: César Arango Carvajal
  */
+
+p {
+  margin: 0;
+}
+
+p::first-letter {
+  font-weight: bold;
+}
+
+.page-content {
+  font-size: 0;
+  box-sizing: border-box;
+  background-color: #D5EADF;
+  padding: 3% 3% 12% 3%;
+  margin: 0 auto;
+}
+
+.big-blue {
+  box-sizing: border-box;
+  background-color: #78C4CF;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+
+}
+
+.existent {
+  width: 16px;
+  height: 16px;
+}
+
+.fa-search::before {
+  width: 16px;
+  height: 16px;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.holder {
+  box-sizing: border-box;
+  width: 55%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.light-cyan {
+  box-sizing: border-box;
+  width: 55%;
+  background-color: #E4F3F5;
+}
+
+.simple-padder {
+  padding: 30px;
+}
+
+.average-yellow {
+  box-sizing: border-box;
+  width: 36%;
+  background-color: #DFE189;
+  position: absolute;
+  top: 12%;
+  right: 3%;
+  max-height: 79%;
+}
+
+.black-shade {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 34%;
+  max-height: 100%;
+
+}
+
+.title-font {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.normal-font {
+  font-size: 16px;
+}
+
+.mix-bordered {
+  margin: 10px 0;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #E12A43;
+}
+
+.control-block {
+  display: block;
+}
+
+.label-for-input {
+  font-size: 0;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.label-for-pink-button {
+  font-size: 0;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+#input {
+  padding: 10px 10px 10px 20px;
+}
+
+.search-container {
+  position: relative;
+}
+
+.button-container {
+  position: relative;
+}
+
+.icon-search {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+}
+
+.icon-for-button {
+  background-color: deeppink;
+  color: white;
+  font-size: 25px;
+}
+
+.simple-list-style {
+  padding: 0;
+  list-style: none;
+}
+
+.simple-list-style li:nth-of-type(2n) {
+  font-size: 12pt;
+}
+
+.simple-list-style li:nth-of-type(2n):after {
+  content: " using 'pt'";
+}
+
+.simple-list-style li:nth-of-type(2n+3) {
+  font-size: 1em;
+}
+
+.simple-list-style li:nth-of-type(2n+3):after {
+  content: " using 'em'";
+}
+
+.extender {
+  height: 3000px;
+}
+
+.search-input {
+  padding: 10px;
+}
+
+#pink-button {
+  color: white;
+  background-color: deeppink;
+  padding: 15px 15px 15px 30px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+  .black-shade {
+    opacity: 0;
+  }
+
+  .average-yellow {
+    position: relative;
+    top: auto;
+    right: auto;
+    height: auto;
+    width: 100%;
+  }
+
+  .holder {
+    width: 100%;
+  }
+
+  .light-cyan {
+    width: 96%;
+  }
+}

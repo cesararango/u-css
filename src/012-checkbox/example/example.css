@@ -23,6 +23,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   max-width: 700px;
+  margin: 0 auto;
   background: #efefef;
   box-shadow: 0 48px 80px -32px rgba(0, 0, 0, 0.3);
 }
@@ -56,6 +57,9 @@ html {
   z-index: 1;
 }
 
+.input:checked + .label + .panel {
+  display: block;
+}
 
 @media (min-width: 600px) {
   .label {
@@ -76,7 +80,6 @@ html {
     order: 99;
   }
 }
-
 
 /* Checkboxes and Radio Buttons */
 
@@ -132,6 +135,19 @@ html {
   content: '';
 }
 
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+
+.control input:checked ~ .control__indicator {
+  background-color: #0babe0;
+}
+
+.control input:disabled ~ .control__indicator {
+  pointer-events: none;
+  opacity: .6;
+  background: #e6e6e6;
+}
 
 .control--checkbox .control__indicator:after {
   top: 4px;
@@ -143,17 +159,15 @@ html {
   border-width: 0 2px 2px 0;
 }
 
-
 .control--radio .control__indicator:after {
-  top: 7px;
-  left: 7px;
-  width: 6px;
-  height: 6px;
+  top: 6px;
+  left: 6px;
+  width: 0;
+  height: 0;
+  border: solid #fff;
+  border-width: 4px;
   border-radius: 50%;
-  background: #fff;
 }
-
-
 
 /*Cards*/
 
@@ -163,7 +177,6 @@ html {
 
 .list-checks ul {
   list-style-type: none;
-  width: 500px;
 }
 
 h3 {
@@ -214,5 +227,17 @@ h3 {
 
   .control-group {
     padding: 30px 0;
+  }
+
+  .list-checks li img {
+    width: 50px;
+  }
+
+  .list-checks ul {
+    padding: 0;
+  }
+
+  .list-checks h3 {
+    margin: 10px 0;
   }
 }

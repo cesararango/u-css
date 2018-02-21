@@ -1,5 +1,93 @@
 /*
  * Practice : Basic Layout
  * Version: 1
- * By: xxx
+ * By: César Arango Carvajal
  */
+
+.nav-bar, .footer-bar {
+  background-color: #D05036;
+  min-height: 20px;
+  padding: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.nav-bar ul, .footer-bar ul, .mdl-list {
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-bar ul li, .footer-bar ul li {
+  color: #ffffff;
+  float: left;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.side-bar {
+  box-sizing: border-box;
+  background-color: #8DD0D1;
+  height: 500px;
+  margin: 0;
+  width: 30%;
+}
+
+.main {
+  font-size: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #FFD0C5;
+  height: 500px;
+  margin: -500px 0 0 30%;
+  width: 70%;
+}
+
+.main div {
+  box-sizing: border-box;
+  float: left;
+  background-color: #8DD0D1;
+  width: 25%;
+  height: 150px;
+  border: 1px solid #CA4E34;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-side-bar {
+  box-sizing: border-box;
+  background-color: #8DD0D1;
+  width: 30%;
+  height: 500px;
+}
+
+.flex-main {
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #FFD0C5;
+  width: 70%;
+  height: 500px;
+}
+
+.flex-square-container {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-square-container div {
+  box-sizing: border-box;
+  width: 25%;
+  background-color: #8DD0D1;
+  height: 150px;
+  border: 1px solid #CA4E34;
+}
+

@@ -1,40 +1,116 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>009 - Fonts, Icons and Sizes</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+<head>
+  <meta charset="utf-8">
+  <title>007 - Z Index, !important and Inheritance</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="../resources/font-awesome/css/font-awesome.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">009 - Fonts, Icons and Sizes</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
+  <!-- Import App Css file -->
+  <link href="./example.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+      <i class="material-icons">home</i>
+    </a>
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">009 - Fonts, Icons and Sizes</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
     </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <!-- Practice Content Goes Here -->
+      <div class="main-container">
+        <div class="big-blue">
+          <div>
+            <div class="simple-padder holder">
+              <h1 class="color-white uppercase title-font">Lorem ipsum dolor sit amet</h1>
+            </div>
 
-  </body>
+            <div class="simple-padder holder">
+              <p class="color-white uppercase normal-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Fusce molestie
+                condimentum vehicula. Proin
+                scelerisque neque id velit varius, quis consequat mauris semper.</p>
+              <hr class="mix-bordered">
+
+              <div class="search-container">
+                <label class="label-for-input" for="input">
+                  <i class="fa fa-search icon-search"></i>
+                </label>
+                <input type="text" class="search-field" placeholder="Search" id="input">
+              </div>
+            </div>
+
+            <div class="light-cyan simple-padder">
+              <h2 class="title title-font">Lorem ipsum dolor sit amet</h2>
+              <p class="normal-font">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie condimentum vehicula. Proin
+                scelerisque neque id velit varius, quis consequat mauris semper.
+              </p>
+              <p class="normal-font">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie condimentum vehicula. Proin
+                scelerisque neque id velit varius, quis consequat mauris semper.
+              </p>
+              <div class="button-container">
+                <label class="label-for-pink-button" for="pink-button">
+                  <i class="fa fa-hand-spock-o icon-for-button"></i>
+                </label>
+                <button id="pink-button">Lorem Lorem Lorem Lorem</button>
+                <!--<p class="normal-font">-->
+                <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie condimentum vehicula. Proin-->
+                <!--scelerisque neque id velit varius, quis consequat mauris semper. Fusce facilisis facilisis quam, in-->
+                <!--interdum nulla consequat id.-->
+                <!--</p>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="black-shade extender"></div>
+
+        <div class="average-yellow extender simple-padder">
+          <h1 class="title-list title-font">Lorem ipsum dolor sit amet</h1>
+          <ul class="normal-font simple-list-style ">
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+            <li class="fa fa-check control-block">Lorem ipsum dolor sit amet</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+</body>
 </html>

@@ -1,5 +1,86 @@
 /*
  * Practice : Negative Margins
  * Version: 1
- * By: xxx
+ * By: César Arango Carvajal
  */
+
+.nm-container {
+  margin: 0 auto;
+  max-width: 1400px;
+
+}
+
+.nm-container h3 {
+  border-bottom: 2px solid #D05036;
+  color: #727272;
+  font-size: 30px;
+}
+
+.nm-container h5 {
+  font-weight: bold;
+}
+
+.nm-container > div {
+  background-color: #F5F5F5;
+  padding: 20px;
+  margin: 30px;
+}
+
+.nm-example div {
+  padding: 0;
+}
+
+.nm-content {
+  margin-right: 400px;
+  margin-bottom: -150px;
+}
+
+.nm-content ~ div {
+  margin-left: 1000px;
+  border-left: 1px solid #DDDDDD;
+}
+
+.nm-container div ul {
+  padding: 0;
+  list-style: none;
+  max-width: 250px;
+}
+
+.nm-container div ul li {
+  line-height: 20px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.nm-container div ul .col2 {
+  margin-left: 100px;
+}
+
+.nm-container div ul .col3 {
+  margin-left: 200px;
+}
+
+.nm-container div ul .top {
+  margin-top: -63px;
+}
+
+.last-section{
+  min-height: 460px;
+}
+
+.nm-site-footer {
+  margin-bottom: -50px;
+}
+
+.nm-container div .nm-footer-list {
+  height: 50px;
+  background-color: #D05036;
+  max-width: none;
+}
+
+.nm-container div .nm-footer-list li {
+  border: none;
+  color: #ffffff;
+  float: left;
+  font-size: 15px;
+  margin: 15px;
+}
